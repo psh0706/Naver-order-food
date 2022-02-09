@@ -1,0 +1,64 @@
+.menu-list-area {
+    padding: 28px $m-padding 10px;
+    background-color: #fff;
+
+    &:not(.new):not(.popular) { //새로나온 메뉴나 인기 메뉴가 아니면 
+        margin-top: 10px;
+    }
+
+    &.new {
+        border-bottom: 1px solid $booking-color-border144;
+    }
+
+    &.is-closed {
+        padding: 24px $m-padding;
+
+        & + .is-closed {// 연달아서 닫힌 메뉴가 있을 경우는 딱 붙히기 위해 마진 제거
+            margin-top: 0;
+            border-top: 1px solid $booking-color-border144;
+        }
+
+        .ico-arrow { // 닫혔을 때 화살표 방향 변경
+            transform: rotate(180deg);
+        }
+
+        .menu-list { // 닫혔을 떄 메뉴 리스트 안보이게
+            display: none;
+        }
+    }
+
+    .menu-category {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .title-area {
+        display: flex;
+        align-items: center; // 중앙정렬
+    }
+
+    .title{
+        font-size: 19px;
+        font-weight: 700;
+        color: $booking-color-text100;
+        letter-spacing: -0.3px;
+    }
+
+    .period {
+        font-size: 14px;
+        letter-spacing: -0.3;
+        color: $booking-color-text4;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            margin: 0 10px;
+            width: 4px;
+            height: 4px;
+            border-radius: 100%;
+            background-color: #ededed;
+            vertical-align: middle;
+        }
+    }
+}
