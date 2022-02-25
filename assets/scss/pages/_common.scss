@@ -1,7 +1,10 @@
 .container {
-    padding-top: $place-tab-height + $place-header-height;
-    padding-bottom: $order-box-area-height;
     background-color: $booking-color-border151;
+    min-height: 100vh; // 회색배경이 전체 뷰포트를 꽉채우도록
+    &:not(.order) { //주문서 페이지에서는 필요없음.
+        padding-top: $place-tab-height + $place-header-height;
+        padding-bottom: $order-box-area-height;
+    }
 }
 
 .common-inner {
