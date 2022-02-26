@@ -14,7 +14,7 @@
             <!-- 주문서 타이틀 -->
             <div class="page-title-area">
                 <p class="title">주문서</p>
-                <button class="btn-close">
+                <button class="btn-close" onClick="goBack()">
                     <img src="../assets/images/ico-close-white.svg" alt="닫기" class="ico-close">
                 </button>
             </div>
@@ -261,6 +261,11 @@
         const modalClose = () => {
             document.querySelector('body').classList.remove('scroll-off');
             document.querySelector('.modal-wrapper').classList.add('hidden');
+        }
+
+        //뒤로가기
+        const goBack = () => {
+                window.history.back();
         }
     </script>
 </body>

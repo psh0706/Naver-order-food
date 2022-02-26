@@ -15,7 +15,7 @@
         <header class="header-area">
             <div class="place-header" role="banner">
                 <h1 class="title">
-                    <a href="#" class="link-back">
+                    <a href="#" class="link-back" onClick="goBack()">
                         <img src="../assets/images/ico-back.svg" alt="뒤로가기">
                     </a>
                     샐러디 쌍문점
@@ -358,6 +358,9 @@
             const popupClose = () => {
                 document.querySelector('body').classList.remove('scroll-off');
                 document.querySelector('.option-popup-area').classList.remove('show');
+            }
+            const goBack = () => {
+                window.history.back();
             }
         </script>
 </body>
