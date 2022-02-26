@@ -7,5 +7,4 @@
 #### Skill : node, Sass
 - `Sass`설치를 위해 `node`를 사용했습니다.
 #### editor : VSCode
-- `Sass` 컴파일러로 `live Sass Complier` 플러그인을 사용했습니다.
-- `live Sever` 플러그인을 사용했습니다.
+- `live Sass Complier`, `live Sever` 플러그인을 사용했습니다.
