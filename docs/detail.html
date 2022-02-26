@@ -9,7 +9,7 @@
 </head>
 <!-- scroll-off는 팝업이 떠 있을때 뒷배경(body)의 스크롤이 움직이지 않도록 하는것.  -->
 <!-- <body class="scroll-off"> -->
-    <body class="">
+    <body>
     <div class="container">
         <!-- 고정 헤더 영역 -->
         <header class="header-area">
@@ -92,7 +92,7 @@
                                 <button class="btn-plus enabled" aria-label="더하기"></button>
                             </div>
                         </div>
-                        <button class="btn-order">1개 담기 9,999원</button>
+                        <button class="btn-order" onClick="popupOpen()">1개 담기 9,999원</button>
                         <!-- <button class="btn-order" disabled>지금은 주문이 불가능 합니다.</button> 주문이 불가능한 상태-->
                     </div>
                     <!-- // 메뉴 주문 영역 -->
@@ -206,7 +206,7 @@
             이 영역 hidden 없앰 + body scroll off -> 팝업 올라갔을 떄 상태
             이 영역 hidden + body scroll off 없앰 -> 팝업 내려갔을 때 상태
          -->
-        <div class="option-popup-area" hidden>
+        <div class="option-popup-area">
             <div class="dimmed-layer light"></div>
             <div class="menu-option-popup">
                 <!-- <img src="../assets/images/ico-content-top-pattern.svg" alt=""> -->
@@ -234,7 +234,7 @@
                                 <button class="btn-plus enabled" aria-label="더하기"></button>
                             </div>
                         </div>
-                        <button class="btn-close">
+                        <button class="btn-close" onClick="popupClose()">
                             <img src="../assets/images/ico-close.svg" alt="" class="close">
                         </button>
                     </div>
@@ -349,5 +349,16 @@
             </div> 
         </div>
         <!-- //옵션 팝업 영역 -->
+
+        <script>
+            const popupOpen = () => {
+                document.querySelector('body').classList.add('scroll-off');
+                document.querySelector('.option-popup-area').classList.add('show');
+            }
+            const popupClose = () => {
+                document.querySelector('body').classList.remove('scroll-off');
+                document.querySelector('.option-popup-area').classList.remove('show');
+            }
+        </script>
 </body>
 </html>
