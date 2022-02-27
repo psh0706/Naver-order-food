@@ -12,7 +12,7 @@ editor : `VSCode` - `live Sass Complier`, `live Sever` 플러그인을 사용했
 기본적으로 모바일 페이지에 적합하도록 구현되어있습니다.  
 
 #### 1) 페이지 흐름도  
-><img src="https://user-images.githubusercontent.com/47502552/155879194-e22c0452-96e9-4b9d-be7c-a8166de70b4a.png" width="900" height="652"/>
+><img src="https://user-images.githubusercontent.com/47502552/155879194-e22c0452-96e9-4b9d-be7c-a8166de70b4a.png" width="900" height="640"/>
 >  
 > 기본적인 페이지의 흐름 입니다.  
  
